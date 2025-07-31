@@ -6,6 +6,14 @@ A React-based frontend application for uploading PDF files, chatting about their
 
 ---
 
+## 🌐 Live Site
+
+You can access the live frontend application here:  
+https://google-notebook-lm-clone.netlify.app/
+
+
+----------
+
 ## 🛠️ Project Setup
 
 ### Prerequisites
@@ -75,14 +83,6 @@ No environment variables are needed for the frontend by default.
 
 ----------
 
-## 🌐 Live Site
-
-You can access the live frontend application here:  
-https://google-notebook-lm-clone.netlify.app/
-
-> Replace the above URL with your actual live site link after deployment.
-
-----------
 
 ## 🔧 Important Dependencies
 
