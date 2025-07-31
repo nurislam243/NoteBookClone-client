@@ -24,7 +24,7 @@ const UploadPage = () => {
     try {
       setLoading(true);
 
-      await axios.post('http://localhost:5000/upload', formData, {
+      await axios.post('https://notebookclone-server.onrender.com/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 

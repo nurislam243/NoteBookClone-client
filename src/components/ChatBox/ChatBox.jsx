@@ -38,7 +38,7 @@ const ChatBox = ({ fileUrl, onCitationClick }) => {
     setIsLoading(true);
 
     try {
-        const response = await axios.post("http://localhost:5000/api/chat", {
+        const response = await axios.post("https://notebookclone-server.onrender.com/api/chat", {
         question: inputText,
         fileUrl,
         });
