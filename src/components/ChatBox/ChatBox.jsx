@@ -10,6 +10,7 @@ import { FaTimesCircle } from 'react-icons/fa';
 import ReactDOMServer from 'react-dom/server';
 import { useNavigate } from 'react-router';
 import { IoMdClose } from 'react-icons/io';
+import { GrDocumentPdf } from 'react-icons/gr';
 
 const ChatBox = ({ fileUrl, onCitationClick }) => {
   const [inputText, setInputText] = useState("");
@@ -118,7 +119,13 @@ const ChatBox = ({ fileUrl, onCitationClick }) => {
       </button>
       <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-base-100/50">
         {messages.length === 0 && (
-          <p className="text-gray-400 text-center">Ask about the document…</p>
+          <div className="bg-black/30 p-5">
+            <h1 className='flex items-center text-xl py-5 font-bold text-primary gap-2'><GrDocumentPdf size={28} /> Your document is ready!</h1>
+            <p className='text-primary mb-3'>You can now ask questions about your document. For example:</p>
+            <p className='text-primary text-sm mb-1'>-"What is the main topic of this document?"</p>
+            <p className='text-primary text-sm mb-1'>-"Can you summarize the key points?"</p>
+            <p className='text-primary text-sm'>-"What are the conclusions or recommendations?"</p>
+          </div>
         )}
 
         {
@@ -127,7 +134,7 @@ const ChatBox = ({ fileUrl, onCitationClick }) => {
               {msg.sender === "user" ? (
                 <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 w-full px-4 py-2 rounded bg-primary/50 text-white">
                   <div className="min-w-[20px]">
-                    <FaRegUser className=" w-10 h-10 bg-white/30 rounded-full p-1.5  text-secondary text-xl font-extrabold" />
+                    <FaRegUser className=" w-10 h-10 bg-black/40 rounded-full p-1.5  text-secondary text-xl font-extrabold" />
                   </div>
                   <div className="w-full">{msg.text}</div>
                 </div>

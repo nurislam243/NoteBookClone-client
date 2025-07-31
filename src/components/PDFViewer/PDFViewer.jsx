@@ -24,11 +24,11 @@ const PDFViewer = ({ fileUrl, scrollToPageNumber }) => {
   }, [scrollToPageNumber]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full px-4 py-6 bg-white">
+    <div className="flex flex-col items-center justify-center h-full p-1.5 bg-primary/50">
       {error ? (
         <div className="text-red-500 font-semibold">Failed to load PDF: {error.message}</div>
       ) : (
-        <div className="shadow-md border rounded-md overflow-auto h-[90vh] w-full max-w-4xl">
+        <div className="shadow-md border rounded-md overflow-auto h-[100vh] w-full max-w-4xl">
           <Document
             file={fileUrl}
             onLoadSuccess={onDocumentLoadSuccess}

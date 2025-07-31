@@ -44,7 +44,7 @@ const UploadPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-base-300 bg-radial-[at_50%_75%] from-primary/35 via-primary/40 to-secondary/40 to-90%">
+    <div className="relative min-h-screen flex items-center justify-center bg-base-300 bg-radial-[at_50%_75%] from-primary/25 via-primary/30 to-secondary/30 to-90%">
       {loading ? (
         <div className="text-center">
           <div className="loader mb-4"></div>

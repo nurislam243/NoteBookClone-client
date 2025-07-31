@@ -40,7 +40,7 @@
 
 /* Tailwind CSS classes */
 .custom-swal-popup {
-  @apply rounded-xl p-6 bg-base-200/90 bg-radial-[at_50%_75%] from-primary/10 via-primary/5 to-secondary/20 to-90%;
+  @apply rounded-xl p-6 shadow hover:shadow-md shadow-primary/40 bg-base-200/90 bg-radial-[at_50%_75%] from-primary/10 via-primary/5 to-secondary/20 to-90%;
 }
 
 .custom-swal-title {

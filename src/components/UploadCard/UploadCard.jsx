@@ -48,8 +48,8 @@ export default function UploadCard({ onFileUpload }) {
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         className={`cursor-pointer py-11 px-12 ${
-          isDragging ? "bg-primary/30 border-2 border-primary/70" : "bg-base-100/60"
-        } shadow-lg rounded-lg flex flex-col items-center justify-center text-center hover:shadow-xl transition duration-300`}
+          isDragging ? "bg-primary/30 border-2 border-primary/70" : "bg-base-100/50"
+        } shadow-md rounded-lg flex flex-col items-center justify-center text-center hover:shadow-xl transition duration-300 shadow-primary/70 hover:bg-base-100/60`}
       >
         <div className="text-primary bg-primary/10 p-4 shadow-primary hover:bg-primary/20 hover:shadow-md rounded-full text-4xl mb-4">
           <FiUpload />
