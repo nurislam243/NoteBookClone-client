@@ -1,12 +1,39 @@
-# React + Vite
+# 📝 Google NotebookLM Clone – PDF Chat Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application built using **React (Frontend)** and **Node.js/Express (Backend)** that allows users to upload PDFs, view them, and chat with the contents. The chat provides smart answers with **page-level citations**, allowing the user to jump to relevant parts of the document directly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### ✅ PDF Upload & Viewing
+- Upload large PDF files.
+- View the uploaded PDF inside a built-in PDF viewer with page navigation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 💬 Chat Interface
+- Ask questions related to the content of the uploaded PDF.
+- Answers are generated using Cohere AI and optimized for minimal token usage.
+
+### 🔍 Citation & Page Navigation
+- Each answer includes **citation buttons** showing relevant page numbers.
+- Clicking a citation scrolls the viewer to the referenced page.
+
+---
+
+## 🧠 Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS + DaisyUI
+- React-PDF
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- Multer (for PDF upload)
+- pdf-parse (for PDF to text conversion)
+- Cohere AI (for embedding + generation)
+
+---
+

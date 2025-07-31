@@ -1,2 +1,60 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+
+  --color-primary: #10B981;       
+  --color-secondary: #6366F1;     
+  --color-accent: #F2994A;        
+  --color-neutral: #1E1E2F;       
+  --color-base-100: #121212;      
+  --color-base-200: #1A1A1A;      
+  --color-base-300: #222222;      
+  --color-info: #3ABFF8;          
+  --color-success: #00C896;       
+  --color-warning: #FFC857;       
+  --color-error: #FF5C5C;         
+  --color-text-primary: #F3F4F6;  
+  --color-text-secondary: #9CA3AF;
+}
+
+
+.loader {
+  border: 6px solid #e5e7eb;
+  border-top: 6px solid #10B981;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Tailwind CSS classes */
+.custom-swal-popup {
+  @apply rounded-xl p-6 bg-base-200/90 bg-radial-[at_50%_75%] from-primary/10 via-primary/5 to-secondary/20 to-90%;
+}
+
+.custom-swal-title {
+  @apply text-xl text-primary font-bold;
+}
+
+.custom-swal-text {
+  @apply text-base text-white mt-2;
+}
+
+.custom-swal-confirm {
+  @apply bg-primary hover:bg-primary/80 text-white px-5 py-2 rounded-lg font-medium flex items-center gap-2 justify-center;
+}
+
+.custom-swal-cancel {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800 px-5 py-2 rounded-lg ml-3 font-medium flex items-center gap-2 justify-center;
+}
